@@ -1,5 +1,6 @@
 import 'bootstrap';
 import './style.scss';
+import sdgsummitLogo from './images/sdgsummit_logo.png';
 import sdgwheel from './images/sdgwheelnumbers.png';
 import sdg1 from './images/E_SDG goals_icons-individual-rgb-01.png';
 import sdg2 from './images/E_SDG goals_icons-individual-rgb-02.png';
@@ -19,10 +20,12 @@ import sdg15 from './images/E_SDG goals_icons-individual-rgb-15.png';
 import sdg16 from './images/E_SDG goals_icons-individual-rgb-16.png';
 import sdg17 from './images/E_SDG goals_icons-individual-rgb-17.png';
 import sdg18 from './images/E_SDG_logo_with_UN_Emblem_square_rgb.png';
+
 var sdgwheelImg = document.getElementById('sdgwheel');
 sdgwheelImg.src = sdgwheel;
 var sdgwheelImg2 = document.getElementById('sdgwheel2');
 sdgwheelImg2.src = sdgwheel;
+document.getElementById('sdgsummitLogo').src = sdgsummitLogo;
 document.getElementById('sdg1').src = sdg1;
 document.getElementById('sdg2').src = sdg2;
 document.getElementById('sdg3').src = sdg3;
@@ -50,17 +53,7 @@ window.onload = function () {
 	window.clickBox(goal);
 	resizeScrollYoo();
 };
-// console.log($);
-window.showHideAccount = function () {
-	$('#accountbox').slideToggle();
-	return false;
-}
-// Wait until the DOM has loaded before querying the document
-$(document).ready(function () {
-	$.post('//sustainabledevelopment.un.org/showUserMenu2.php', function (result) {
-		$('#accountbox').html(result);
-	});
-});
+
 function resizeScrollYoo () {
 	if ($('body').scrollTop() > 35) {
 		sdgkplogo.className = 'sdgkplogo_small';
@@ -70,7 +63,7 @@ function resizeScrollYoo () {
 		}
 	}
 }
-var sdgkplogo = document.getElementById('sdgkplogo');
+var sdgkplogo = document.getElementById('sdgsummitLogo');
 $(document).scroll(function () {
 	resizeScrollYoo();
 });
