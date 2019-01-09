@@ -1,5 +1,5 @@
 {
-  "name": "emptyb4",
+  "name": "sdgsummit",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -42,5 +42,16 @@
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.8"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "npm": "^6.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elneto/sdgsummit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elneto/sdgsummit/issues"
+  },
+  "homepage": "https://github.com/elneto/sdgsummit#readme"
 }
