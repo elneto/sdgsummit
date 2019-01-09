@@ -40,7 +40,25 @@ a {
 
 // homepage
 #first-section {
-  
+  padding-top: 0;
+}
+
+.jumbotron{
+  padding: 0;
+  h1{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: oswald;
+  }
+  #cover{
+    margin-top: -7em;
+  }
+  p.blurb{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
 }
 
 #opacity-div {

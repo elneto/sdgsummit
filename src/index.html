@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,600" media="all" />
-  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400" media="all" />
+  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,500" media="all" />
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Anton:100,200,300,400" media="all" />
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
@@ -133,7 +133,33 @@
 
     <div class="container">
       <div class="row">
+        <div class="col">
+          <!-- Jumbotron -->
+          <div class="jumbotron text-center">
 
+            <!-- Card image -->
+            <div class="view overlay">
+              <img id="cover" class="img-fluid" alt="cover image">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <h1 class="indigo-text h1 mt-4">Accelerating the implementation of the</h1>
+            <h1 class="indigo-text h1 mt-1">2030 Agenda for Sustainable Development</h1>
+
+            <p class="card-text blurb">On 24 and 25 September...</p>
+
+            <!-- Linkedin -->
+            <a class="fa-lg p-2 m-2 li-ic"><i class="fab fa-linkedin-in grey-text"></i></a>
+            <!-- Twitter -->
+            <a class="fa-lg p-2 m-2 tw-ic"><i class="fab fa-twitter grey-text"></i></a>
+            <!-- Dribbble -->
+            <a class="fa-lg p-2 m-2 fb-ic"><i class="fab fa-facebook-f grey-text"></i></a>
+
+          </div>
+          <!-- Jumbotron -->
+        </div>
       </div>
       <!-- end row -->
     </div>
