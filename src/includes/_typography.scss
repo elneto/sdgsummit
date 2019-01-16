@@ -32,6 +32,33 @@ span.our-number {
   font-weight: 400;
 }
 
+.jumbotron{
+  padding: 0;
+  h1{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: oswald;
+  }
+
+  p.blurb{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+}
+
+#home-video{
+  h2{
+    font-family: oswald;
+    font-size: 2.5em;
+  }
+
+  p{
+  font-size: 1.2em;
+  }
+}
+
 h3 {
   font-size: $font-size-base*1.3;
   text-transform: uppercase;
@@ -68,6 +95,7 @@ blockquote.wquote-text {
     font-weight: 100;
     border-left: none;
     margin: 25px;
+    margin-top: 0;
 }
 
 %icon{
