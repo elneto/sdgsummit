@@ -2,7 +2,6 @@ import 'bootstrap';
 import './style.scss';
 import sdgsummitLogo from './images/sdgsummit_logo.png';
 import cover from './images/cover.jpg';
-// import arrows from './images/arrows.png';
 
 import sdg1 from './images/E_SDG goals_icons-individual-rgb-01.png';
 import sdg2 from './images/E_SDG goals_icons-individual-rgb-02.png';
@@ -25,7 +24,7 @@ import sdg18 from './images/E_SDG_logo_with_UN_Emblem_square_rgb.png';
 
 document.getElementById('sdgsummitLogo').src = sdgsummitLogo;
 document.getElementById('cover').src = cover;
-// document.getElementById('arrow').src = arrow;
+
 document.getElementById('sdg1').src = sdg1;
 document.getElementById('sdg2').src = sdg2;
 document.getElementById('sdg3').src = sdg3;
