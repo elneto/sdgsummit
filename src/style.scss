@@ -90,20 +90,6 @@ img#sdgwheel2 {
   /* right: 2%; */
 }
 
-.quicklinks>h2 {
-  font-size: inherit;
-  border-bottom: 2px solid $blue;
-  margin-top: 1em;
-}
-
-.quicklinks ul,
-li {
-  list-style-type: none;
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
-}
-
 button#btn-hpsearch {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -153,10 +139,15 @@ a.list-group-item.list-group-item-action {
 
 #skeleton1 {
 
-  img:hover,
-  .sdgbig:hover {
+  padding-left: 15px;
+  padding-right: 15px;
+  img:hover {
     transition: transform 0.8s;
     transform: scale(1.1);
+  }
+
+  & * {
+    padding: 0;
   }
 }
 

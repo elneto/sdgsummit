@@ -42,7 +42,6 @@ document.getElementById('sdg14').src = sdg14;
 document.getElementById('sdg15').src = sdg15;
 document.getElementById('sdg16').src = sdg16;
 document.getElementById('sdg17').src = sdg17;
-document.getElementById('sdg18').src = sdg18;
 document.getElementById('emblem').src = sdg18;
 var $ = require('jquery');
 window.onload = function () {
