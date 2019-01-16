@@ -29,9 +29,15 @@ a {
   padding-top: 0;
 }
 
+.jumbotron{
+  padding: 0;
+  padding-bottom: 1em;
+}
+
 section#home-video{
   background: url('./images/arrows.png') no-repeat $blue-background;
-    background-position: right;
+  background-position: right;
+  padding: 3em 0;
 }
 
 #opacity-div {
