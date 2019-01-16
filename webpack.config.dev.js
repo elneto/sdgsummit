@@ -31,6 +31,7 @@ module.exports = {
 			filename: 'index.html'
 		})
 	],
+  devtool: 'eval-source-map',
 	entry: {
 		main: './src/index.js'
 	},

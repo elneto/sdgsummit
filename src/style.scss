@@ -41,6 +41,11 @@ a {
   padding-top: 0;
 }
 
+section#home-video{
+  background: url('./images/arrows.png') no-repeat $blue-background;
+    background-position: right;
+}
+
 .jumbotron{
   padding: 0;
   h1{
@@ -49,7 +54,7 @@ a {
     letter-spacing: 0.03em;
     font-family: oswald;
   }
-  
+
   p.blurb{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
@@ -185,11 +190,6 @@ a.list-group-item.list-group-item-action {
   margin-top: 1.5em;
 }
 
-div#sdg1,
-#mainsdgbox1 {
-  //background: url('./images/E_SDG goals_icons-individual-rgb-01.png') no-repeat;
-  background-color: $sdg1;
-}
 
 div#sdg2,
 #mainsdgbox2 {
