@@ -58,6 +58,56 @@ p.featured {
   font-size: $font-size-base*0.85;
 }
 
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+}
+
+blockquote.wquote-text {
+    font-size: 2.5em;
+    font-weight: 100;
+    border-left: none;
+    margin: 25px;
+}
+
+%icon{
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+blockquote.wquote-text:before {
+    @extend %icon;
+    text-indent: -1.5em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    margin: -20px;
+
+}
+blockquote.wquote-text:after {
+    @extend %icon;
+    text-indent: 0.6em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    margin: 20px;
+}
+
+.white-text, .white-text a, .white-text p {
+    color: white;
+}
+
 #cover-title {
   font-size: $font-size-base*1.2;
   font-weight: 600;
@@ -98,7 +148,7 @@ p.featured {
 }
 
 .quicklinks {
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 .quicklinks>h1 {

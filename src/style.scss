@@ -12,17 +12,6 @@
   // height: 100vh;
 }
 
-%rotate {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
 a {
   color: $blue-dark-3;
 
@@ -83,10 +72,6 @@ img#sdgwheel {
 img#sdgwheel2 {
   margin-top: 2.9em;
   padding-bottom: 1em;
-}
-
-.rotate {
-  @extend %rotate;
 }
 
 .noypadding{

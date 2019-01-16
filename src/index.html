@@ -17,7 +17,7 @@
   <meta name="keywords" content="Sustainable development, Future We Want, Rio+20, Green economy, sustainable development goals, Division for Sustainable Development, United Nations Conference on Sustainable Development, high-level political forum, voluntary commitments, partnerships for sustainable development, small island developing states, SIDS 2014" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,600" media="all" />
+  <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,200,400,500,600" media="all" />
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,500" media="all" />
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Anton:100,200,300,400" media="all" />
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
@@ -166,6 +166,18 @@
   </section>
   <section id="home-video">
     <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <blockquote class="wquote-text text-center white-text">
+            I commit myself, and the entire United Nations, to this effort. We will support all leaders who rise to the challenge I have outlined today.
+          </blockquote>
+        </div>
+      </div>
     </div>
     <!-- end container -->
   </section>
@@ -441,11 +453,7 @@
   </footer>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.7/js/imageMapResizer.min.js"></script>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-  <script>
-    imageMapResize();
-  </script>
 </body>
 
 </html>
