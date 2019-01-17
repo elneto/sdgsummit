@@ -22,6 +22,12 @@ import sdg16 from './images/E_SDG goals_icons-individual-rgb-16.png';
 import sdg17 from './images/E_SDG goals_icons-individual-rgb-17.png';
 import sdg18 from './images/E_SDG_logo_with_UN_Emblem_square_rgb.png';
 
+import imgAbout from './images/about.jpg';
+import imgProgramme from './images/programme.jpg';
+document.getElementById('imgAbout').src = imgAbout;
+
+document.getElementById('imgProgramme').src = imgProgramme;
+
 document.getElementById('sdgsummitLogo').src = sdgsummitLogo;
 document.getElementById('cover').src = cover;
 

@@ -93,6 +93,17 @@ h4 {
   font-size: $font-size-base*1.1;
 }
 
+a.media-top-heading{
+  text-decoration: none;
+}
+
+.media-top-heading h4 {
+  margin-top: 1em;
+  font-size: 20px;
+  text-align: center;
+  color: $gray-dark;
+}
+
 h4.featured {
   margin-top: 0.5em;
 }
