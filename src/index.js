@@ -24,9 +24,21 @@ import sdg18 from './images/E_SDG_logo_with_UN_Emblem_square_rgb.png';
 
 import imgAbout from './images/about.jpg';
 import imgProgramme from './images/programme.jpg';
-document.getElementById('imgAbout').src = imgAbout;
+import imgOutcomes from './images/outcomes.jpg';
+import imgDocs from './images/docs.jpg';
+import imgInfo from './images/info.jpg';
+import imgSide from './images/side.jpg';
+import imgMedia from './images/media.jpg';
+import imgAdvocates from './images/advocates.jpg';
 
+document.getElementById('imgAbout').src = imgAbout;
 document.getElementById('imgProgramme').src = imgProgramme;
+document.getElementById('imgOutcomes').src = imgOutcomes;
+document.getElementById('imgDocs').src = imgDocs;
+document.getElementById('imgInfo').src = imgInfo;
+document.getElementById('imgSide').src = imgSide;
+document.getElementById('imgMedia').src = imgMedia;
+document.getElementById('imgAdvocates').src = imgAdvocates;
 
 document.getElementById('sdgsummitLogo').src = sdgsummitLogo;
 document.getElementById('cover').src = cover;
