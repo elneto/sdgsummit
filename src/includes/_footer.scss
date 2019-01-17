@@ -53,7 +53,7 @@
       height: 21px;
       margin-bottom: 10px;
       background: url('./images/un-logo-footer.png') left top no-repeat;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 21px;
       line-height: 21px;
       letter-spacing: -0.02em;
@@ -79,4 +79,9 @@ footer #block-menu-footer-links ul.nav-bar li {
   margin-right: 5.85px;
   border-right: #737373 solid 1px;
   line-height: 1;
+  font-size:13px;
+
+  & a{
+    color: black;
+  }
 }

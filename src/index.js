@@ -30,6 +30,8 @@ import imgInfo from './images/info.jpg';
 import imgSide from './images/side.jpg';
 import imgMedia from './images/media.jpg';
 import imgAdvocates from './images/advocates.jpg';
+import imgChange from './images/change.png';
+import imgLazy from './images/lazy.png';
 
 document.getElementById('imgAbout').src = imgAbout;
 document.getElementById('imgProgramme').src = imgProgramme;
@@ -39,6 +41,8 @@ document.getElementById('imgInfo').src = imgInfo;
 document.getElementById('imgSide').src = imgSide;
 document.getElementById('imgMedia').src = imgMedia;
 document.getElementById('imgAdvocates').src = imgAdvocates;
+document.getElementById('imgChange').src = imgChange;
+document.getElementById('imgLazy').src = imgLazy;
 
 document.getElementById('sdgsummitLogo').src = sdgsummitLogo;
 document.getElementById('cover').src = cover;
