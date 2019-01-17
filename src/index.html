@@ -24,7 +24,14 @@
 </head>
 
 <body>
-
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div id="brand-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <!-- UN global brand bar -->
     <div class="container brandbar-header">
@@ -280,7 +287,7 @@
     </div>
   </section>
 
-  <section id="latest-section" class="container">
+  <section class="container">
 
     <div class="row">
       <div class="col">
@@ -336,12 +343,18 @@
 
   </section>
 
-  <footer class="container footer">
+  <section id="latest-section" class="container">
+
+    <div class="row">
+      <div class="col">
+        <h3>Get Engaged</h3>
+      </div>
+    </div>
+  </section>
+  <section class="container">
     <div class="row">
       <div class="col-12 col-sm-4">
-        <h3>
-          DIVISION FOR SUSTAINABLE DEVELOPMENT GOALS, UN-DESA
-        </h3>
+
         <ul class="menu nav">
           <li class="first leaf"><a href="//sustainabledevelopment.un.org/about">About</a> </li>
           <li class="leaf"><a href="//sustainabledevelopment.un.org/contact">Contact us</a></li>
@@ -349,33 +362,18 @@
         </ul>
       </div>
       <div class="col-12 col-sm-4">
-        <h3>
-          <br>RESOURCES
-        </h3>
-        <ul class="menu nav">
-          <li class="leaf"><a href="//sustainabledevelopment.un.org/calendar">Calendar</a></li>
-          <li class="leaf"><a href="//sustainabledevelopment.un.org/conferences">Conferences</a></li>
-          <li class="leaf"><a href="//sustainabledevelopment.un.org/consultancies">Consultancies</a></li>
-          <li class="leaf"><a href="//sustainabledevelopment.un.org/resources/documents">Documents</a></li>
-          <li class="leaf"><a href="//sustainabledevelopment.un.org/resources/publications">Publications</a></li>
-        </ul>
+        <a class="twitter-timeline" data-lang="en" data-width="300" data-height="545" data-dnt="true" data-link-color="#00adef" href="https://twitter.com/GlobalGoalsUN?ref_src=twsrc%5Etfw">Tweets by GlobalGoalsUN</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <div class="col-12 col-sm-4">
-        <h3>
-          <br>SOCIAL MEDIA
-        </h3>
-        <ul class="menu nav">
-          <li class="leaf"><a href="//www.facebook.com/SustDev/" target="_blank"><i class="fab fa-facebook"></i>
-              Facebook</a></li>
-          <li class="leaf"><a href="//twitter.com/sustdev" target="_blank"><i class="fab fa-twitter-square"></i>
-              Twitter</a></li>
-          <li class="leaf"><a href="//www.instagram.com/highlevelpoliticalforum/" target="_blank"><i class="fab fa-instagram"></i>
-              Instagram</a></li>
-          <li class="leaf"><a href="//www.youtube.com/channel/UCuRvaHuH9ic9deQ7y0eVICA" target="_blank"><i class="fab fa-youtube"></i>
-              Youtube</a></li>
-        </ul>
+        <div class="fb-page" data-href="https://www.facebook.com/globalgoalsUN/" data-tabs="timeline" data-width="300" data-height="545" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/globalgoalsUN/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/globalgoalsUN/">Global Goals for Sustainable Development</a></blockquote>
+        </div>
       </div>
     </div>
+
+  </section>
+  <footer class="container footer">
     <div id="block-menu-footer-links" class="row list-inline footer-brand">
       <div class="col-md-12">
         <div class="float-left flip footer-emblem">
