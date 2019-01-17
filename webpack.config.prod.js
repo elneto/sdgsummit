@@ -29,13 +29,13 @@ module.exports = {
       hash: true,
       template: './src/index.html',
       filename: 'index.html',
-      // minify: {
-      //   collapseWhitespace: true,
-      //   removeComments: true,
-      //   removeRedundantAttributes: true,
-      //   removeScriptTypeAttributes: true,
-      //   removeStyleLinkTypeAttributes: true
-      // }
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true
+      }
     })
   ],
   entry: {
@@ -44,7 +44,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js',
-    publicPath: '/content/dist2/'
+    publicPath: '/content/sdgsummit/'
   },
   module: {
     rules: [
@@ -72,7 +72,7 @@ module.exports = {
               // you can specify a publicPath here
               // by default it use publicPath in webpackOptions.output
               publicPath: '../',
-              publicPath: '/content/dist2/'
+              publicPath: '/content/sdgsummit/'
             }
           },
           {
@@ -100,7 +100,7 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             outputPath: 'images/',
-            publicPath: '/content/dist2/images/'
+            publicPath: '/content/sdgsummit/images/'
           }
         }]
       },
