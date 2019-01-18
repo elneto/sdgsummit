@@ -31,7 +31,7 @@ module.exports = {
 			filename: 'index.html'
 		})
 	],
-  devtool: 'eval-source-map',
+	devtool: 'eval-source-map',
 	entry: {
 		main: './src/index.js'
 	},
@@ -80,7 +80,10 @@ module.exports = {
 					}
 				}
 			}, {
-				loader: 'sass-loader' // compiles Sass to CSS
+				loader: 'sass-loader', // compiles Sass to CSS
+				options: {
+					sourceMap: true
+				}
 			}
 			]
 		},
