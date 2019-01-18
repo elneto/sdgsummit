@@ -29,6 +29,15 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     li.nav-item {
         padding: 0 1em;
         border-right: 1px solid white;
+
+        &:hover {
+            background-color: $gray-lighter;
+            border-right: 1px solid black;
+
+            a.nav-link {
+                color: black;
+            }
+        }
     }
 }
 
