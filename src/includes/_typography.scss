@@ -17,103 +17,102 @@ $legacy-support-for-ie8: true;
 
 html,
 body {
-  font-family: $font-family-sans-serif !important;
-  font-size: $font-size-base;
+    font-family: $font-family-sans-serif !important;
+    font-size: $font-size-base;
 }
 
 span.our-number {
-  font-size: 1.6em;
+    font-size: 1.6em;
 }
 
 .navbar-nav li a {
-  font-family: $font-family-oswald;
-  font-size: $font-size-base * 1.07;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.jumbotron{
-  h1{
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    font-family: oswald;
-    margin: 0 1em;
-  }
-
-  p.blurb{
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family-sans-serif;
+    //font-size: $font-size-base * 1.07;
     font-weight: 400;
-    text-align: left;
-    margin: 2em;
-  }
 }
 
-#home-video{
-  h2{
-    font-family: oswald;
-    font-size: 2.5em;
+.jumbotron {
+    h1 {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        font-family: oswald;
+        margin: 0 1em;
+    }
+
+    p.blurb {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: left;
+        margin: 2em;
+    }
+}
+
+#home-video {
+    h2 {
+        font-family: oswald;
+        font-size: 2.5em;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+%line-down-h {
     text-transform: uppercase;
-  }
-
-  p{
-  font-size: 1.2em;
-  }
+    border-bottom: $blue solid 3px;
+    padding-bottom: 7px;
 }
 
-%line-down-h{
-  text-transform: uppercase;
-  border-bottom: $blue solid 3px;
-  padding-bottom: 7px;
+p.featured-text {
+    font-size: 2em;
+    color: rgb(77, 77, 77);
 }
 
-p.featured-text{
-  font-size: 2em;
-  color: rgb(77,77,77);
-}
+h2 {
 
-h2{
-
-  font-size: $font-size-base*1.6;
+    font-size: $font-size-base*1.6;
 }
 
 h3 {
-  font-family: oswald;
-  @extend %line-down-h;
-  font-size: $font-size-base*1.9;
-  letter-spacing: 0.03em;
-  color: rgb(51,51,51);
-  // color: $gray-dark-70-percent;
-  margin-bottom: 9px;
-  margin-top: 1em;
+    font-family: oswald;
+    @extend %line-down-h;
+    font-size: $font-size-base*1.9;
+    letter-spacing: 0.03em;
+    color: rgb(51, 51, 51);
+    // color: $gray-dark-70-percent;
+    margin-bottom: 9px;
+    margin-top: 1em;
 }
 
 h4 {
-  font-size: $font-size-base*1.1;
+    font-size: $font-size-base*1.1;
 }
 
-a.media-top-heading{
-  text-decoration: none;
+a.media-top-heading {
+    text-decoration: none;
 }
 
 .media-top-heading h4 {
-  margin-top: 1em;
-  font-size: 20px;
-  text-align: center;
-  color: $gray-dark;
+    margin-top: 1em;
+    font-size: 20px;
+    text-align: center;
+    color: $gray-dark;
 }
 
 h4.featured {
-  margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 
 a h4 {
-  color: $gray-dark-70-percent;
+    color: $gray-dark-70-percent;
 }
 
 p.featured {
-  font-size: $font-size-base*0.85;
+    font-size: $font-size-base*0.85;
 }
 
 blockquote {
@@ -129,12 +128,12 @@ blockquote.wquote-text {
     margin-top: 0;
 }
 
-%icon{
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+%icon {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 blockquote.wquote-text:before {
@@ -150,6 +149,7 @@ blockquote.wquote-text:before {
     margin: -20px;
 
 }
+
 blockquote.wquote-text:after {
     @extend %icon;
     text-indent: 0.6em;
@@ -163,55 +163,57 @@ blockquote.wquote-text:after {
     margin: 20px;
 }
 
-.white-text, .white-text a, .white-text p {
+.white-text,
+.white-text a,
+.white-text p {
     color: white;
 }
 
 #cover-title {
-  font-size: $font-size-base*1.2;
-  font-weight: 600;
-  line-height: 1.2;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  width: 52.5%;
+    font-size: $font-size-base*1.2;
+    font-weight: 600;
+    line-height: 1.2;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 52.5%;
 }
 
 #cover-subtitle {
-  font-size: $font-size-base*0.9;
-  font-weight: 600;
-  white-space: pre;
-  border-top: 2px solid black;
-  padding-top: 0.3em;
-  width: min-content;
+    font-size: $font-size-base*0.9;
+    font-weight: 600;
+    white-space: pre;
+    border-top: 2px solid black;
+    padding-top: 0.3em;
+    width: min-content;
 }
 
 #tagline-block {
-  font-size: $font-size-base*3;
-  font-family: $font-boxes-homepage;
-  font-weight: 400;
+    font-size: $font-size-base*3;
+    font-family: $font-boxes-homepage;
+    font-weight: 400;
 }
 
 #tagline-blockxs {
-  color: white;
-  opacity: .8;
-  padding: 1em 0 .5em 0;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: auto;
-  position: relative;
-  font-size: $font-size-base*2.5;
-  font-family: $font-boxes-homepage;
-  font-weight: 400;
-  top:28%;
+    color: white;
+    opacity: .8;
+    padding: 1em 0 .5em 0;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: auto;
+    position: relative;
+    font-size: $font-size-base*2.5;
+    font-family: $font-boxes-homepage;
+    font-weight: 400;
+    top: 28%;
 }
 
 .quicklinks {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .quicklinks>h1 {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 .sdgbox {
@@ -224,12 +226,15 @@ blockquote.wquote-text:after {
     text-align: left;
     display: none;
 
-    h2,h3{
-      padding-left: 2rem;
-      a {
-        color: white;
-      }
+    h2,
+    h3 {
+        padding-left: 2rem;
+
+        a {
+            color: white;
+        }
     }
+
     h3 {
         color: white;
         border: none;
@@ -244,17 +249,19 @@ blockquote.wquote-text:after {
         font-weight: 100;
         font-size: 1.2em;
         text-align: center;
+
         a {
-          color: white;
+            color: white;
         }
     }
-    .read{
-      font-family: $font-family-sans-serif;
-      color:white;
-      border: 2px solid white;
-      padding: 0.3rem 0.5rem;
-      position: absolute;
-      top:2px;
-      right: 2rem;
+
+    .read {
+        font-family: $font-family-sans-serif;
+        color: white;
+        border: 2px solid white;
+        padding: 0.3rem 0.5rem;
+        position: absolute;
+        top: 2px;
+        right: 2rem;
     }
 }

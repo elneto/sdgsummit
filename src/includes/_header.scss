@@ -15,6 +15,10 @@
     }
 }
 
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    height: 34px;
+}
+
 #navbarSupportedContent {
     input.form-control {
         width: 8em;
@@ -23,7 +27,8 @@
     }
 
     li.nav-item {
-        margin-right: 0.5rem;
+        padding: 0 1em;
+        border-right: 1px solid white;
     }
 }
 
@@ -74,18 +79,21 @@
     }
 }
 
+img#sdgsummitLogo {
+    margin: 2em 0;
+}
+
 .sdgkplogo_normal {
     height: 46px !important;
 }
 
 .sdgkplogo_small {
     height: 30px !important;
-    margin-top: 6px !important;
+    margin: 1em 0 !important;
 }
 
 #stickymenu {
     background-color: white;
-    padding-top: 1em;
 }
 
 // Masthead
