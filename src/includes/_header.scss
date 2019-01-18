@@ -29,6 +29,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     li.nav-item {
         padding: 0 1em;
         border-right: 1px solid white;
+        background-color: $gray-dark-70-percent;
 
         &:hover {
             background-color: $gray-lighter;
