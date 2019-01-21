@@ -73,9 +73,13 @@ var sdgkplogo = document.getElementById('sdgsummitLogo');
 function resizeScrollYoo () {
 	if ($('body').scrollTop() > 35) {
 		sdgkplogo.className = 'sdgkplogo_small';
+		$('button.navbar-toggler').addClass('mt-3');
+		$('button.navbar-toggler').removeClass('mt-5');
 	} else {
 		if ($(window).width() > 576) {
 			sdgkplogo.className = 'sdgkplogo_normal';
+			$('button.navbar-toggler').addClass('mt-5');
+			$('button.navbar-toggler').removeClass('mt-3');
 		}
 	}
 }
@@ -87,8 +91,11 @@ $(document).scroll(function () {
 $(window).resize(function () {
 	if ($(window).width() < 576) {
 		sdgkplogo.className = 'sdgkplogo_small';
-		// columnof2.className = 'noypadding';
+		$('button.navbar-toggler').addClass('mt-3');
+		$('button.navbar-toggler').removeClass('mt-5');
 	} else {
 		sdgkplogo.className = 'sdgkplogo_normal';
+		$('button.navbar-toggler').addClass('mt-5');
+		$('button.navbar-toggler').removeClass('mt-3');
 	}
 });
