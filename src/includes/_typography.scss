@@ -74,6 +74,10 @@ p.featured-text {
     color: rgb(77, 77, 77);
 }
 
+p.caption {
+    color: $gray-dark-70-percent;
+}
+
 h2 {
     font-size: $font-size-base*1.6;
     font-weight: 700;
