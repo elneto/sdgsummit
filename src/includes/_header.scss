@@ -15,9 +15,9 @@
     }
 }
 
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
-    height: 34px;
-}
+// nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+//     height: 34px;
+// }
 
 #navbarSupportedContent {
     input.form-control {
@@ -107,6 +107,11 @@ img#sdgsummitLogo {
 }
 
 // Masthead
+
+.navbar {
+    padding: 0;
+}
+
 header.navbar-default {
     margin-top: 0 !important;
     margin-bottom: 10px;
