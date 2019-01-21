@@ -34,6 +34,13 @@ a {
     padding-bottom: 1em;
 }
 
+.topBanner {
+    height: 10em;
+    background-repeat-x: no-repeat;
+    background-size: 100%;
+    margin-bottom: 2em;
+}
+
 section#home-video {
     // background: url('./images/sdgwheel.png') no-repeat $blue-background;
     background: no-repeat $blue-background;
