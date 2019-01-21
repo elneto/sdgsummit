@@ -74,20 +74,19 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-
+                    <ul class="nav nav-tabs navbar-nav mr-auto" role="navigation">
                         <li class="nav-item">
-                            <a class="nav-link" href="" style="padding-left: 0;">Home</a>
+                            <a class="nav-link active" href="#home" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true" style="padding-left: 0;">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">About</a>
+                            <a href="#about" class="nav-link" id="about-tab" data-toggle="tab" role="tab" aria-controls="about" aria-selected="false">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Programme</a>
+                            <a class="nav-link" href="#programme" id="programme-tab" data-toggle="tab" role="tab" aria-controls="programme" aria-selected="false">Programme</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Outcomes</a>
@@ -125,240 +124,267 @@
         </nav>
 
     </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" aria-labelledby="home-tab">
+            <section id="first-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Jumbotron -->
+                            <div class="jumbotron text-center">
 
-    <section id="first-section">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <!-- Jumbotron -->
-                    <div class="jumbotron text-center">
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                    <img id="cover" class="img-fluid" alt="cover image">
+                                    <a href="#">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
 
-                        <!-- Card image -->
-                        <div class="view overlay">
-                            <img id="cover" class="img-fluid" alt="cover image">
-                            <a href="#">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
+                                <h1 class="indigo-text h1 mt-4">Accelerating the implementation of the</h1>
+                                <h1 class="indigo-text h1 mt-1">2030 Agenda for Sustainable Development</h1>
+
+                                <p class="card-text blurb">On 24 and 25 September 2019, Heads of State and Government will gather at the UN Headquarters in New York to celebrate the 2030 Agenda for Sustainable Development and the 17 Sustainable Development Goals
+                                    (SDGs). The event is the first ever UN summit since the adoption of the 2030 Agenda in September 2015.</p>
+
+                                <!-- Linkedin -->
+                                <!-- <a class="fa-lg p-2 m-2 li-ic"><i class="fab fa-linkedin-in grey-text"></i></a> -->
+                                <!-- Twitter -->
+                                <!-- <a class="fa-lg p-2 m-2 tw-ic"><i class="fab fa-twitter grey-text"></i></a> -->
+                                <!-- Dribbble -->
+                                <!-- <a class="fa-lg p-2 m-2 fb-ic"><i class="fab fa-facebook-f grey-text"></i></a> -->
+
+                            </div>
+                            <!-- Jumbotron -->
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <section id="home-video">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-center white-text mb-5">The SDGs... Turn Promises into Reality</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0XTBYMfZyrM?rel=0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <blockquote class="wquote-text text-center white-text">
+                                The 2030 Agenda and the Sustainable Development Goals are our collective response to building a fair globalization
+                            </blockquote>
+                            <p class="white-text text-center">António Guterres, UN Secretary General</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end container -->
+            </section>
+
+            <section class="mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>The 2030 Agenda is the plan of action for people, planet and prosperity</h3>
+                            <p class="featured-text"><strong>It aims to transform our world</strong>. It applies to all countries and aims to improve people's lives and prosperity on a healthy planet, through partnerships and peace.
+                                All countries, many cities and multiple actors of the business sector and civil society are actively engaged in implementing the Agenda and
+                                pursuing the Sustainable Development Goals (SDGs). They are mobilizing efforts to end all forms of poverty, fight inequalities and tackle climate
+                                change, while ensuring that no one is left behind.
+                                The summit will be a space to recognize and discuss the huge efforts that are being made, draw lessons and identify actions for accelerating
+                                progress towards the SDGs. It will also assess progress, gaps and challenges in the implementation of the Agenda.</p>
+                        </div>
+                    </div>
+                    <div id="skeleton1">
+                        <div class="row">
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdgs"><img id="emblem" class="img-fluid" alt="emblem"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg1"><img id="sdg1" class="img-fluid" alt="SDG1"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg2"><img id="sdg2" class="img-fluid" alt="SDG2"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg3"><img id="sdg3" class="img-fluid" alt="SDG3"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg4"><img id="sdg4" class="img-fluid" alt="SDG4"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg5"><img id="sdg5" class="img-fluid" alt="SDG5"></a>
+                            </div>
                         </div>
 
-                        <h1 class="indigo-text h1 mt-4">Accelerating the implementation of the</h1>
-                        <h1 class="indigo-text h1 mt-1">2030 Agenda for Sustainable Development</h1>
+                        <div class="row">
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg6"><img id="sdg6" class="img-fluid" alt="SDG6"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg7"><img id="sdg7" class="img-fluid" alt="SDG7"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg8"><img id="sdg8" class="img-fluid" alt="SDG8"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg9"><img id="sdg9" class="img-fluid" alt="SDG9"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg10"><img id="sdg10" class="img-fluid" alt="SDG10"></a>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg11"><img id="sdg11" class="img-fluid" alt="SDG11"></a>
+                            </div>
+                        </div>
+                        <div class="row">
 
-                        <p class="card-text blurb">On 24 and 25 September 2019, Heads of State and Government will gather at the UN Headquarters in New York to celebrate the 2030 Agenda for Sustainable Development and the 17 Sustainable Development Goals
-                            (SDGs). The event is the first ever UN summit since the adoption of the 2030 Agenda in September 2015.</p>
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg12"><img id="sdg12" class="img-fluid" alt="SDG12"></a>
+                            </div>
 
-                        <!-- Linkedin -->
-                        <!-- <a class="fa-lg p-2 m-2 li-ic"><i class="fab fa-linkedin-in grey-text"></i></a> -->
-                        <!-- Twitter -->
-                        <!-- <a class="fa-lg p-2 m-2 tw-ic"><i class="fab fa-twitter grey-text"></i></a> -->
-                        <!-- Dribbble -->
-                        <!-- <a class="fa-lg p-2 m-2 fb-ic"><i class="fab fa-facebook-f grey-text"></i></a> -->
 
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg13"><img id="sdg13" class="img-fluid" alt="SDG13"></a>
+                            </div>
+
+
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg14"><img id="sdg14" class="img-fluid" alt="SDG14"></a>
+                            </div>
+
+
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg15"><img id="sdg15" class="img-fluid" alt="SDG15"></a>
+                            </div>
+
+
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg16"><img id="sdg16" class="img-fluid" alt="SDG16"></a>
+                            </div>
+
+
+                            <div class="col-6 col-md-2">
+                                <a href="//sustainabledevelopment.un.org/sdg17"><img id="sdg17" class="img-fluid" alt="SDG17"></a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Jumbotron -->
-                </div>
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <section id="home-video">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center white-text mb-5">The SDGs... Turn Promises into Reality</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0XTBYMfZyrM?rel=0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <blockquote class="wquote-text text-center white-text">
-                        The 2030 Agenda and the Sustainable Development Goals are our collective response to building a fair globalization
-                    </blockquote>
-                    <p class="white-text text-center">António Guterres, UN Secretary General</p>
-                </div>
-            </div>
-        </div>
-        <!-- end container -->
-    </section>
 
-    <section class="mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3>The 2030 Agenda is the plan of action for people, planet and prosperity</h3>
-                    <p class="featured-text"><strong>It aims to transform our world</strong>. It applies to all countries and aims to improve people's lives and prosperity on a healthy planet, through partnerships and peace.
-                        All countries, many cities and multiple actors of the business sector and civil society are actively engaged in implementing the Agenda and
-                        pursuing the Sustainable Development Goals (SDGs). They are mobilizing efforts to end all forms of poverty, fight inequalities and tackle climate
-                        change, while ensuring that no one is left behind.
-                        The summit will be a space to recognize and discuss the huge efforts that are being made, draw lessons and identify actions for accelerating
-                        progress towards the SDGs. It will also assess progress, gaps and challenges in the implementation of the Agenda.</p>
                 </div>
-            </div>
-            <div id="skeleton1">
+            </section>
+
+            <section class="container">
+
                 <div class="row">
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdgs"><img id="emblem" class="img-fluid" alt="emblem"></a>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg1"><img id="sdg1" class="img-fluid" alt="SDG1"></a>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg2"><img id="sdg2" class="img-fluid" alt="SDG2"></a>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg3"><img id="sdg3" class="img-fluid" alt="SDG3"></a>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg4"><img id="sdg4" class="img-fluid" alt="SDG4"></a>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg5"><img id="sdg5" class="img-fluid" alt="SDG5"></a>
+                    <div class="col">
+                        <h3>About the 2019 SDG Summit</h3>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg6"><img id="sdg6" class="img-fluid" alt="SDG6"></a>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="media-top-heading"><img id="imgAbout" class="img-fluid" alt="about">
+                            <h4>About</h4>
+                        </a>
                     </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg7"><img id="sdg7" class="img-fluid" alt="SDG7"></a>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="media-top-heading"><img id="imgProgramme" class="img-fluid" alt="programme">
+                            <h4>Programme</h4>
+                        </a>
                     </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg8"><img id="sdg8" class="img-fluid" alt="SDG8"></a>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="media-top-heading"><img id="imgOutcomes" class="img-fluid" alt="outcomes">
+                            <h4>Outcomes</h4>
+                        </a>
                     </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg9"><img id="sdg9" class="img-fluid" alt="SDG9"></a>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg10"><img id="sdg10" class="img-fluid" alt="SDG10"></a>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg11"><img id="sdg11" class="img-fluid" alt="SDG11"></a>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="media-top-heading"><img id="imgDocs" class="img-fluid" alt="Documentation">
+                            <h4>Documentation</h4>
+                        </a>
                     </div>
                 </div>
+
                 <div class="row">
-
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg12"><img id="sdg12" class="img-fluid" alt="SDG12"></a>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="media-top-heading"><img id="imgInfo" class="img-fluid" alt="Information">
+                            <h4>Information</h4>
+                        </a>
                     </div>
-
-
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg13"><img id="sdg13" class="img-fluid" alt="SDG13"></a>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="media-top-heading"><img id="imgSide" class="img-fluid" alt="Side events">
+                            <h4>Side Events</h4>
+                        </a>
                     </div>
-
-
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg14"><img id="sdg14" class="img-fluid" alt="SDG14"></a>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="media-top-heading"><img id="imgMedia" class="img-fluid" alt="Media">
+                            <h4>Media</h4>
+                        </a>
                     </div>
-
-
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg15"><img id="sdg15" class="img-fluid" alt="SDG15"></a>
-                    </div>
-
-
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg16"><img id="sdg16" class="img-fluid" alt="SDG16"></a>
-                    </div>
-
-
-                    <div class="col-6 col-md-2">
-                        <a href="//sustainabledevelopment.un.org/sdg17"><img id="sdg17" class="img-fluid" alt="SDG17"></a>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="media-top-heading"><img id="imgAdvocates" class="img-fluid" alt="SDG Advocates">
+                            <h4>SDG Advocates and Champions</h4>
+                        </a>
                     </div>
                 </div>
-            </div>
 
-        </div>
-    </section>
+            </section>
 
-    <section class="container">
+            <section id="latest-section" class="container">
 
-        <div class="row">
-            <div class="col">
-                <h3>About the 2019 SDG Summit</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-6 col-md-3">
-                <a href="" class="media-top-heading"><img id="imgAbout" class="img-fluid" alt="about">
-                    <h4>About</h4>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="" class="media-top-heading"><img id="imgProgramme" class="img-fluid" alt="programme">
-                    <h4>Programme</h4>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="" class="media-top-heading"><img id="imgOutcomes" class="img-fluid" alt="outcomes">
-                    <h4>Outcomes</h4>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="" class="media-top-heading"><img id="imgDocs" class="img-fluid" alt="Documentation">
-                    <h4>Documentation</h4>
-                </a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-6 col-md-3">
-                <a href="" class="media-top-heading"><img id="imgInfo" class="img-fluid" alt="Information">
-                    <h4>Information</h4>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="" class="media-top-heading"><img id="imgSide" class="img-fluid" alt="Side events">
-                    <h4>Side Events</h4>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="" class="media-top-heading"><img id="imgMedia" class="img-fluid" alt="Media">
-                    <h4>Media</h4>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="" class="media-top-heading"><img id="imgAdvocates" class="img-fluid" alt="SDG Advocates">
-                    <h4>SDG Advocates and Champions</h4>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="latest-section" class="container">
-
-        <div class="row">
-            <div class="col">
-                <h3>Get Engaged</h3>
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <a href="//www.un.org/sustainabledevelopment/be-the-change/"><img id="imgChange" class="img-fluid mt-3" alt="Be the change"></a>
-                <a href="//www.un.org/sustainabledevelopment/takeaction/"><img id="imgLazy" class="img-fluid mt-4" alt="The Lazy's person guide to saving the world"></a>
-            </div>
-            <div class="col-12 col-md-4">
-                <a class="twitter-timeline" data-lang="en" data-width="300" data-height="545" data-dnt="true" data-link-color="#00adef" href="https://twitter.com/GlobalGoalsUN?ref_src=twsrc%5Etfw">Tweets by GlobalGoalsUN</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="fb-page" data-href="https://www.facebook.com/globalgoalsUN/" data-tabs="timeline" data-width="300" data-height="545" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/globalgoalsUN/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/globalgoalsUN/">Global Goals for Sustainable Development</a></blockquote>
+                <div class="row">
+                    <div class="col">
+                        <h3>Get Engaged</h3>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <a href="//www.un.org/sustainabledevelopment/be-the-change/"><img id="imgChange" class="img-fluid mt-3" alt="Be the change"></a>
+                        <a href="//www.un.org/sustainabledevelopment/takeaction/"><img id="imgLazy" class="img-fluid mt-4" alt="The Lazy's person guide to saving the world"></a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a class="twitter-timeline" data-lang="en" data-width="300" data-height="545" data-dnt="true" data-link-color="#00adef" href="https://twitter.com/GlobalGoalsUN?ref_src=twsrc%5Etfw">Tweets by GlobalGoalsUN</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="fb-page" data-href="https://www.facebook.com/globalgoalsUN/" data-tabs="timeline" data-width="300" data-height="545" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/globalgoalsUN/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/globalgoalsUN/">Global Goals for Sustainable Development</a></blockquote>
+                        </div>
+                    </div>
+                </div>
 
-    </section>
+            </section>
+        </div>
+        <!-- ends tab content -->
+        <div class="tab-pane" id="about" aria-labelledby="about-tab">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1>About</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ends tab content -->
+        <div class="tab-pane" id="programme" aria-labelledby="programme-tab">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Programme</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <footer class="container footer">
         <div id="block-menu-footer-links" class="row list-inline footer-brand">
             <div class="col-md-12">

@@ -1,4 +1,5 @@
 import 'bootstrap';
+import 'bootstrap/js/dist/util';
 import './style.scss';
 import sdgsummitLogo from './images/sdgsummit_logo.png';
 import cover from './images/cover.jpg';
