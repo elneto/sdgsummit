@@ -89,7 +89,7 @@ $(document).scroll(function () {
 });
 // var columnof2 = document.getElementById('columnof2');
 $(window).resize(function () {
-	if ($(window).width() < 576) {
+	if ($(window).width() <= 576) {
 		sdgkplogo.className = 'sdgkplogo_small';
 		$('button.navbar-toggler').addClass('mt-3');
 		$('button.navbar-toggler').removeClass('mt-5');
@@ -100,7 +100,7 @@ $(window).resize(function () {
 	}
 });
 
-var menuItems = ['about', 'programme', 'outcomes', 'documentation', 'information', 'side', 'media'];
+var menuItems = ['home', 'about', 'programme', 'outcomes', 'documentation', 'information', 'side', 'media'];
 
 menuItems.forEach(function (item) {
 	$('a[href="#' + item + '"]').on('click', function (e) {
