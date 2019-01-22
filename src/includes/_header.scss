@@ -122,6 +122,11 @@ img#sdgsummitLogo {
     margin: 2em 0;
 }
 
+input.form-control{
+  border-radius: 0;
+  background-color: $gray-lighter;
+}
+
 .sdgkplogo_normal {
     height: 55px !important;
 }
