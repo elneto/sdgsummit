@@ -99,3 +99,12 @@ $(window).resize(function () {
 		$('button.navbar-toggler').removeClass('mt-3');
 	}
 });
+
+var menuItems = ['about', 'programme', 'outcomes', 'documentation', 'information', 'side', 'media'];
+
+menuItems.forEach(function (item) {
+	$('a[href="#' + item + '"]').on('click', function (e) {
+		e.preventDefault();
+		$('#' + item + '-tab').tab('show');
+	});
+});
