@@ -65,53 +65,45 @@ document.getElementById('sdg15').src = sdg15;
 document.getElementById('sdg16').src = sdg16;
 document.getElementById('sdg17').src = sdg17;
 document.getElementById('emblem').src = sdg18;
+
+var sdgkplogo = document.getElementById('sdgsummitLogo');
+
 var $ = require('jquery');
-window.onload = function () {
-	resizeScrollYoo();
+
+function headerSmall () {
+	sdgkplogo.className = 'sdgkplogo_small';
+	$('button.navbar-toggler').addClass('mt-3').removeClass('mt-5');
+	$('form#search-form').addClass('mt-3').removeClass('mt-5');
 };
 
+function headerNormal () {
+	sdgkplogo.className = 'sdgkplogo_normal';
+	$('button.navbar-toggler').addClass('mt-5').removeClass('mt-3');
+	$('form#search-form').addClass('mt-5').removeClass('mt-3');
+};
+
+function resizeHeader () {
+	if ($('body').scrollTop() > 35 || $(window).width() < 576) {
+		headerSmall();
+	} else {
+		headerNormal();
+	}
+}
+
 $(document).ready(function () {
+	resizeHeader();
 	var url = window.location.href.toString();
 	if (url.match('#')) {
 		$('#' + url.split('#')[1] + '-tab').tab('show');
 	}
 });
 
-var sdgkplogo = document.getElementById('sdgsummitLogo');
-function resizeScrollYoo () {
-	if ($('body').scrollTop > 35) {
-		sdgkplogo.className = 'sdgkplogo_small';
-		$('button.navbar-toggler').addClass('mt-3');
-		$('button.navbar-toggler').removeClass('mt-5');
-		$('form#search-form').addClass('mt-3');
-		$('form#search-form').removeClass('mt-5');
-	} else {
-		sdgkplogo.className = 'sdgkplogo_normal';
-		$('button.navbar-toggler').addClass('mt-5');
-		$('button.navbar-toggler').removeClass('mt-3');
-		$('form#search-form').addClass('mt-5');
-		$('form#search-form').removeClass('mt-3');
-	}
-}
-
 $(document).scroll(function () {
-	resizeScrollYoo();
+	resizeHeader();
 });
-// var columnof2 = document.getElementById('columnof2');
+
 $(window).resize(function () {
-	if ($(window).width() < 576) {
-		sdgkplogo.className = 'sdgkplogo_small';
-		$('button.navbar-toggler').addClass('mt-3');
-		$('button.navbar-toggler').removeClass('mt-5');
-		$('form#search-form').addClass('mt-3');
-		$('form#search-form').removeClass('mt-5');
-	} else {
-		sdgkplogo.className = 'sdgkplogo_normal';
-		$('button.navbar-toggler').addClass('mt-5');
-		$('button.navbar-toggler').removeClass('mt-3');
-		$('form#search-form').addClass('mt-5');
-		$('form#search-form').removeClass('mt-3');
-	}
+	resizeHeader();
 });
 
 var menuItems = ['home', 'about', 'programme', 'outcomes', 'documentation', 'information', 'side', 'media'];
