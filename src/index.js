@@ -69,6 +69,14 @@ var $ = require('jquery');
 window.onload = function () {
 	resizeScrollYoo();
 };
+
+$(document).ready(function () {
+	var url = window.location.href.toString();
+	if (url.match('#')) {
+		$('#' + url.split('#')[1] + '-tab').tab('show');
+	}
+});
+
 var sdgkplogo = document.getElementById('sdgsummitLogo');
 function resizeScrollYoo () {
 	if ($('body').scrollTop() > 35) {
@@ -114,5 +122,6 @@ menuItems.forEach(function (item) {
 	$('a[href="#' + item + '"]').on('click', function (e) {
 		e.preventDefault();
 		$('#' + item + '-tab').tab('show');
+		window.location.href = '#' + item;
 	});
 });
