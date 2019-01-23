@@ -15,11 +15,12 @@
     }
 }
 
-// nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
-//     height: 34px;
-// }
-
 #navbarSupportedContent {
+
+    a.nav-link, a.dropdown-item{
+      text-transform: uppercase;
+    }
+
     input.form-control {
         width: 8em;
         border-top-right-radius: 0;
@@ -27,7 +28,7 @@
     }
 
     li.nav-item {
-        padding: 0 0.5em;
+        padding: 0 0.1em;
         border-right: 1px solid white;
         background-color: $gray-dark-70-percent;
 
