@@ -106,7 +106,7 @@ $(window).resize(function () {
 	resizeHeader();
 });
 
-var menuItems = ['home', 'about', 'programme', 'outcomes', 'documentation', 'information', 'side', 'media'];
+var menuItems = ['home', 'about', 'programme', 'outcomes', 'documentation', 'information', 'side', 'media', 'prep', 'eng', 'latest', 'qa'];
 
 menuItems.forEach(function (item) {
 	$('a[href="#' + item + '"]').on('click', function (e) {
